@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        // JavaScript code for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+          var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
+          for (var i = 0; i < smoothScrollTriggers.length; i++) {
+            smoothScrollTriggers[i].addEventListener('click', function(e) {
+              e.preventDefault();
+              var href = this.getAttribute('href');
+              var targetElement = document.getElementById(href.replace('#', ''));
+              var rect = targetElement.getBoundingClientRect();
+              var offset = window.pageYOffset;
+              var targetPosition = rect.top + offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            });
+          }
+        });
+      </script>
+    <title>Vivid Cosmetics</title>
+</head>
+<body>
+    <section class="homescreen" id="home">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="Slide 1">
+            <div class="carousel-content">
+              <h2>Industrial Construction</h2>
+              <p>Building industrial spaces that excel in functionality, durability, and aesthetic appeal.</p><p>Vivin Construction specialises in industrial construction projects, utilising our expertise to deliver exceptional results. With a focus on efficiency and cost-effectiveness, we maximise the use of available resources to meet stringent industry standards.</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="Slide 2">
+            <div class="carousel-content">
+              <h2>Commercial Construction</h2>
+              <p>"Elevating commercial spaces with excellence"</p><p>Vivin Construction excels in constructing commercial properties with a winning mindset, maximising resource utilisation for optimal outcomes. Our approach combines ruggedness and cost-effectiveness while adhering to strict security and government standards.</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/images/pexels-ray-piedra-2720447.jpg" alt="Slide 3">
+            <div class="carousel-content">
+              <h2>Residential Construction</h2>
+              <p>Crafting extraordinary homes that surpass your expectations</p><p>Vivin Construct specialises in creating exceptional residential properties that exceed your expectations. With careful attention to your requirements, we bring your vision to life with expertise and care.</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <nav>
+            <a class="homelink" href="index.html"><p class="fontlogo">Vivid Cosmetics</p></a>
+            <div class="navLinks" id="navLinks">
+                <img src="assets/icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul> 
+            </div>
+            <img src="assets/icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
+        </nav>
+    </section>
+    <section class="brands" id="brand">
+      <div class="brand-carousel-container">
+        <div class="brand-carousel">
+          <div class="brand-slide">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+          </div>
+          <div class="brand-slide">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+          </div>
+          <div class="brand-slide">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+            <img src="assets/images/loreal paris.png" alt="">
+          </div>
+          <!-- Add more slides here -->
+        </div>
+      </div>
+          
+    </section>
+    <section class="aboutus hidden" id="about">
+        <h2 class="headings">About Us</h2>
+        <div class="aboutholder">
+            <div class="aboutcontent">
+                <h3>Vivid Cosmetics</h3>
+                <p class="taglines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem amet necessitatibus, modi distinctio, non optio hic voluptas nisi delectus veritatis, temporibus nam dolores maxime! Rem repudiandae repellendus itaque sequi.</p>
+                <p class="expl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur, molestiae nostrum aperiam voluptas vero recusandae autem ad quis repellendus officiis laborum iste iure porro. Sapiente pariatur voluptas nobis at.</p>
+                <a href="#ourservices"><button>Explore</button></a>
+            </div>
+            <div class="aboutimage">
+                <img src="assets/images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="products hidden" id="products">
+      <h2 class="headings">Products</h2>
+      <div class="productholder">
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="">
+            <div class="productcontent">
+              <h3>Skin Care products</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+        </div>
+        <div class="psec2">
+          <img src="assets/images/pexels-ray-piedra-2720447.jpg" alt="">
+          <div class="productcontent">
+            <h3>Body Care products</h3>
+          </div>
+        </div>
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href=""><button>Contact Us</button></a>
+      <div class="productholder">
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="">
+            <div class="productcontent">
+              <h3>Skin Care products</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+        </div>
+        <div class="psec2">
+          <img src="assets/images/pexels-ray-piedra-2720447.jpg" alt="">
+          <div class="productcontent">
+            <h3>Body Care products</h3>
+          </div>
+        </div>
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+            <div class="productcontent">
+              <h3>Body Care products</h3>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <a href=""><button>Contact Us</button></a>
+    </section>
+    <section class="testimonial hidden" id="testimonial">
+      <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+      <h2>People's Say</h2>
+     
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <p class="testimonial-quote">"When we brought VIVIN on board for our residential villa project, I had serious doubts about its success due to the incredibly tight construction schedule. However, VIVIN proved to be exceptional by investing the necessary time to understand our requirements and delivering an outstanding output. Their efforts were so remarkable that our home received the prestigious "BEST ARCHITECT & BUILDER" award from the Mysore district jurisdiction"</p>
+          <p class="testimonial-author">- Priya Vasanthraj</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"We want to express our heartfelt appreciation for the exceptional performance of you and your associates in every aspect. Your professionalism, attentiveness to our needs, and commitment to completing projects within the specified timeframe and budget have been truly remarkable. The design expertise and innovative thinking you have brought to our initiatives have exceeded our expectations and provided us with added value, something we deeply value and appreciate. Thank you for your outstanding contributions."</p>
+          <p class="testimonial-author">- Sandeep Urs</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"Throughout our project, VIVIN consistently upheld the highest standards of quality, value, professionalism, safety, and cleanliness, with a primary focus on ethics and customer satisfaction. Not only was our project completed within the specified timeline, but it was also accomplished under budget. When you choose to work with VIVIN, you're not just hiring a General Contractor; you're partnering with a dedicated advocate who is committed to realising your dreams and goals."</p>
+          <p class="testimonial-author">- Ravi Hulkoti</p>
+        </div>
+      </div>
+  </section>
+
+  <footer id="footer">
+    <!---<img src="images/Vivin-construction-and-engineering-logo-01.png" alt="" class="footerlogo">--->
+    <h3 class="footerlogo">Vivid Cosmetics</h3>
+    <div class="contact">
+        <div class="cholders">
+            <img src="assets/icons/call-icon.svg" alt="">
+            <a href="tel:919481068476" class="contact">+91 123456789</a>
+        </div>
+        <div class="cholders">
+            <img src="assets/icons/whatsapp-icon.svg" alt="">
+            <a href="https://wa.me/9481068476" class="contact">+91 123456789</a>
+        </div>
+        <div class="cholders">
+            <img src="assets/icons/gmail-icon.svg" alt="">
+            <a href="mailto:info@vivingroups.com" class="contact">info@vividcosmetics</a>
+        </div>
+    </div>
+  </footer>
+  <div class="copyright">
+      <p>&copy;<a class="copy" href="">2023  Vivid Cosmetics</a>| All Rights Reserved. Design and Developed By<a class="copy" href="https://theonesolution.co.in/"> The One Solution</a></p> 
+  </div>
+    
+    
+
+
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/carosuel.js"></script>
+    <script src="assets/js/brandslider.js"></script>
+    <script src="assets/js/scrollanimation.js"></script>
+</body>
+</html>
